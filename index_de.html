@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artistic Painting👩‍🎨</title>
+    <title>Kunstmalerei👩‍🎨</title>
     <style>
       h1,
       h2,
@@ -90,77 +90,75 @@
   <body>
       <div class="container">
         <p class="language">
-          <a href="index_de.html">
-         German / Deutsch
+          <a href="index.html">
+        Englisch /English
           </a>
         </p>
       <h1>
-        Artistic Painting
+        Kunstmalerei
       </h1>
       <p>
-        Painting is the application of pigments to a support surface that
-        establishes an image, design or decoration.
+        Malerei ist das Auftragen von Pigmenten auf eine Trägeroberfläche. Daraus entsteht ein
+        Bild, Design oder eine Dekoration.
         <br />
-        In art the term <em>painting</em> describes both the act and the result.
+        In der Kunst beschreibt der Begriff <em>Malerei</em> sowohl die Tätigkeit als auch das Ergebnis.
         <br />
-        Most painting is created with pigment in liquid form and applied with a
-        brush.
+        Die meisten Gemälde werden mit Pigmenten in flüssiger Form erstellt und mit einem Pinsel aufgetragen.
         <br />
         <br />
-        There are three main types of paints:
+        Die bekanntesten Arten von Malerei sind:
       </p>
       <h2>
-        acrylic, watercolor and oil 
+        Acryl, Wasserfarben und Öl
       </h2>
       <p>
-        These paints all have different methods and have different techniques
-        for you to master:
+        Diese Farben haben alle unterschiedliche Methoden und Techniken:
       </p>
       <button class="choose-button">
-        <strong>Choose types of paints</strong>
+        <strong>Wähle eine Maltechnik</strong>
       </button>
       <p>
-      <a href="https://www.kidzworld.com/article/23736-the-different-types-of-paint/
+      <a href="https://www.lernen.net/artikel/malen-lernen-5-tipps-525/#maltechniken-im-ueberblick
         "target="_blank class="moreInfo">
-         More info find here
+         Weitere Informationen
       </a>
       </p>
       <hr />
     <div class="gallery">
       <img
         src="img/img_Waterfall_oilAcryl.jpg"
-        alt="OilAcrylWaterfall © Myrta Rüegger"
+        alt="Oel-Acryl Wasserfall © Myrta Rüegger"
       />
       <img
         src="img/img_StillLife_Watercolor.jpg"
-        alt="WatercolorStillLife © Myrta Rüegger"
+        alt="Wasserfarbe Stillleben © Myrta Rüegger"
       />
         <img
           src="img/img_Landscape_oil.jpg"
-          alt="Oillandscape © Myrta Rüegger"
+          alt="Oel Landschaft © Myrta Rüegger"
       />
       </div>  
       <hr />
       <p class="footer">
-        This page was created by
-        <a href="mailto:myrtaru(at)gmail.com" color: #144081>Myrta Rüegger </a>
+        Diese Seite wurde von 
+        <a href="mailto:myrtaru(at)gmail.com" color: #144081>Myrta Rüegger</a> erstellt
       </p>
     </div>
   <script>
     function choosePaintingType() {
-     let name = prompt("What is your name?");
-     let paintingType = prompt("Choose a favorite painting type. (acrylic, watercolor or oil)");
-     let email = prompt("What is your email address?");
+     let name = prompt("Wie heissen Sie?");
+     let paintingType = prompt("Nennen Sie Ihre bevorzugte Maltechnik. (Acryl, Wasserfarben oder Öl)");
+     let email = prompt("Wie lautet Ihre E-Mail Adresse?");
       paintingType = paintingType.trim ();
-    if ( paintingType === "oil" || paintingType === "watercolor" || paintingType === "acrylic")
+    if ( paintingType === "Öl" || paintingType === "Wasserfarben" || paintingType === "Acryl")
     { 
       alert (
-       "Dear " + name + " , you have made a good choice! Further information about " + paintingType + " painting will be sent to " + email );
+       "Vielen Dank " + name + ", Sie haben eine gute Wahl getroffen! Weitere Informationen über " + paintingType + "malerei werden an " + email + " gesendet.");
     }
     else
     {
       alert (
-       "Thank you " + name + " for your interest, please choose another type than " + paintingType + "!");
+       "Vielen Dank " + name + " für Ihr Interesse. Bitte wählen Sie eine der drei Möglichkeiten und nicht " + paintingType + "!");
     }
   }   
    let chooseButton = document.querySelector(".choose-button");

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistic Painting👩‍🎨</title>
+    <style>
+      h1,
+      h2,
+      p {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+      }
+      h1 {
+        color: #144081;
+        line-height: 60px;
+        font-size: 52px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #08c908;
+        font-size: 36px;
+        word-spacing: 0.1em;
+      }
+      p {
+        line-height: 1.2;
+        font-size: 20px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 2px solid #144081;
+        background: #144081;
+        color: #d6e3f3;
+        font-size: 20px;
+        line-height: 24x;
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        background: #d6e3f3;
+        color: #144081;
+      }
+      .container {
+        background:linear-gradient(90deg, rgba(172,206,248,1) 0%, rgba(214,227,243,1) 35%, rgba(236,243,251,1) 70%);
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+      }
+      a {text-decoration: underline;
+        color: #144081;
+      }
+      img {
+        max-width: 25%;
+        padding: 15px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;;
+        cursor: zoom-in;
+      }
+      img:hover {
+        transition: transform 3s;
+        transform: scale(1.5, 1.5);
+      }
+      .gallery {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .moreInfo {
+        text-align: center;
+        text-decoration: underline;      
+      }
+      .footer {
+        text-align: center;
+        font-size: 16px;
+        color: #144081;    
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+      <h1>
+        Artistic Painting
+      </h1>
+      <p>
+        Painting is the application of pigments to a support surface that
+        establishes an image, design or decoration.
+        <br />
+        In art the term <em>painting</em> describes both the act and the result.
+        <br />
+        Most painting is created with pigment in liquid form and applied with a
+        brush.
+        <br />
+        <br />
+        There are three main types of paints:
+      </p>
+      <h2>
+        acrylic, watercolor and oil 
+      </h2>
+      <p>
+        These paints all have different methods and have different techniques
+        for you to master:
+      </p>
+      <button class="choose-button">
+        <strong>Choose types of paints</strong>
+      </button>
+      <p>
+      <a href="https://www.kidzworld.com/article/23736-the-different-types-of-paint/
+        "target="_blank class="moreInfo">
+         More info find here
+      </a>
+      </p>
+      <hr />
+    <div class="gallery">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/348/original/pic_Waterfall_oilAcryl.jpg?1614197612"
+        alt="OilAcrylWaterfall © Myrta Rüegger"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/347/original/pic_StillLife_Watercolor.jpg?1614197556"
+        alt="WatercolorStillLife © Myrta Rüegger"
+      />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/349/original/pic_Landscape_oil.jpg?1614197649"
+          alt="Oillandscape © Myrta Rüegger"
+      />
+      </div>  
+      <hr />
+      <p class="footer">
+        This page was created by
+        <a href="mailto:myrtaru(at)gmail.com" color: #144081>Myrta Rüegger </a>
+      </p>
+    </div>
+  <script>
+    function choosePaintingType() {
+     let name = prompt("What is your name?");
+     let paintingType = prompt("What is your favorite painting type?");
+     let email = prompt("What is your email address?");
+      paintingType = paintingType.trim ();
+    if ( paintingType === "oil" || paintingType === "watercolor" || paintingType === "acrylic")
+    { 
+      alert (
+       "Dear " + name + " , you have made a very good choice! Further information about " + paintingType + " painting has been sent to " + email );
+    }
+    else
+    {
+      alert (
+       "Thank you " + name + " for your interest, please choose another type than " + paintingType + "!");
+    }
+  }   
+   let chooseButton = document.querySelector(".choose-button");
+   chooseButton.addEventListener("click", choosePaintingType);
+  </script>
+  </body>
+</html>
